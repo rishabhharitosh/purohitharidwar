@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ganga Aarti Haridwar | Har Ki Pauri Ganga Aarti Booking</title>
+<meta name="description" content="Haridwar ke Har Ki Pauri par pavitra Ganga Aarti me shamil hon. VIP darshan, special pooja booking aur best view ke liye advance booking karein.">
+<meta name="keywords" content="ganga aarti haridwar, har ki pauri ganga aarti, ganga aarti booking haridwar, vip ganga aarti haridwar, ganga aarti time haridwar, evening ganga aarti haridwar">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { background:#f6f9ff; }
+    .hero {
+      background: url('images/ganga-aarti.jpg') center/cover no-repeat;
+      min-height: 65vh;
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #0b5ed7;
+    }
+    .info-card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .booking-box {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 25px;
+      position: sticky;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Purohit Haridwar</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="asthi-visarjan.html">Asthi Visarjan</a></li>
+        <li class="nav-item"><a class="nav-link" href="pind-daan.html">Pind Daan</a></li>
+        <li class="nav-item"><a class="nav-link active" href="ganga-aarti.html">Ganga Aarti</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1 class="display-5 fw-bold">Ganga Aarti at Har Ki Pauri, Haridwar</h1>
+    <p class="lead">Haridwar ki sabse prasiddh aur pavitra Ganga Aarti – ab advance booking ke saath.</p>
+    <a href="#booking" class="btn btn-warning btn-lg mt-2">🪔 Book Ganga Aarti</a>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="container my-5">
+  <div class="row g-4">
+    
+    <!-- Info Section -->
+    <div class="col-lg-7">
+      <div class="card info-card p-4 mb-4">
+        <h3 class="section-title">Ganga Aarti kya hai?</h3>
+        <p>Ganga Aarti Maa Ganga ki pavitra pooja hai jo Har Ki Pauri par roz shaam ko hoti hai. Yeh sabse purani aur vishesh aarti mani jati hai.</p>
+      </div>
+
+      <div class="card info-card p-4 mb-4">
+        <h3 class="section-title">Haridwar ki Ganga Aarti ka mahatva</h3>
+        <p>Yahan hone wali Ganga Aarti ko haal hi me world record recognition bhi mila hai. Desh–videsh se log darshan ke liye aate hain.</p>
+      </div>
+
+      <div class="card info-card p-4">
+        <h3 class="section-title">Ganga Aarti Timing & Booking</h3>
+        <p>Ganga Aarti roz shaam ko hoti hai. VIP darshan aur special pooja ke liye advance booking ki suvidha uplabdh hai.</p>
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="col-lg-5" id="booking">
+      <div class="booking-box">
+        <h4 class="mb-3 text-center">📲 Book Ganga Aarti</h4>
+        <form onsubmit="sendWhatsApp(); return false;">
+          <div class="mb-3">
+            <label class="form-label">Naam</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile Number</label>
+            <input type="tel" id="phone" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Ganga Aarti Date</label>
+            <input type="date" id="date" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Number of Persons</label>
+            <input type="number" id="persons" class="form-control" min="1" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message (Optional)</label>
+            <textarea id="message" class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">WhatsApp par Booking Bheje</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">📞 Call/WhatsApp: 918679636172</p>
+  <p class="mb-0">© Purohit Haridwar</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- WhatsApp Script -->
+<script>
+  function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var date = document.getElementById("date").value;
+    var persons = document.getElementById("persons").value;
+    var message = document.getElementById("message").value;
+
+    var text = `Ganga Aarti Booking Request:%0AName: ${name}%0APhone: ${phone}%0ADate: ${date}%0ANumber of Persons: ${persons}%0AMessage: ${message}`;
+    var url = "https://wa.me/918679636172?text=" + text;
+
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+</html>
